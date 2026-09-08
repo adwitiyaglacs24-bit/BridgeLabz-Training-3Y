@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        nav {
+            background: #222;
+            padding: 15px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        nav a {
+            padding: 12px 20px;
+
+            color: white;
+            text-decoration: none;
+
+            border: 2px solid transparent;
+            border-radius: 6px;
+
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background: white;
+            color: #222;
+            border-color: white;
+        }
+
+        nav a.active {
+            background: #3498db;
+            border-bottom: 3px solid #f1c40f;
+        }
+
+        main {
+            flex: 1;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+            padding: 30px;
+            background: #ecf0f1;
+        }
+
+        footer {
+            padding: 20px;
+            text-align: center;
+            background: #222;
+            color: white;
+        }
+
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                width: 100%;
+                text-align: center;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+
+        <a href="#" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+
+    </nav>
+
+    <main>
+
+        <div>
+            <h1>Welcome to My Website</h1>
+            <p>
+                This page demonstrates CSS transitions,
+                hover effects and responsive navigation.
+            </p>
+        </div>
+
+    </main>
+
+    <footer>
+        © 2026 My Website | All Rights Reserved
+    </footer>
+
+</body>
+</html>

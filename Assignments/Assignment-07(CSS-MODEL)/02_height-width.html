@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height and Width Practice</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: #eeeeee;
+        }
+
+        .container {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            color: white;
+            font-weight: bold;
+
+            overflow: auto;
+        }
+
+        .box1 {
+            width: 200px;
+            height: 150px;
+            background: #3498db;
+        }
+
+        .box2 {
+            width: 30%;
+            height: 25vh;
+            min-height: 120px;
+            background: #2ecc71;
+        }
+
+        .box3 {
+            width: 18em;
+            height: 200px;
+            max-width: 300px;
+            background: #e74c3c;
+        }
+
+        @media (max-width: 700px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="box box1">
+            Width: 200px<br>
+            Height: 150px
+        </div>
+
+        <div class="box box2">
+            Width: 30%<br>
+            Height: 25vh
+        </div>
+
+        <div class="box box3">
+            Width: 18em<br>
+            Max-width: 300px
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typography and Text Styling</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+
+            background: #f8f9fa;
+            color: #2d3436;
+
+            font-family: Arial, sans-serif;
+        }
+
+        article {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+        }
+
+        h1 {
+            font-family: Georgia, serif;
+            font-size: 2.5rem;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            font-family: "Courier New", monospace;
+            font-size: 1.5em;
+        }
+
+        p {
+            font-family: Arial, sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+
+            line-height: 1.8;
+            letter-spacing: 0.5px;
+            text-align: justify;
+        }
+
+        mark {
+            background: #ffe66d;
+            color: #222;
+            padding: 2px 5px;
+        }
+
+        strong {
+            color: #e74c3c;
+        }
+
+        em {
+            color: #8e44ad;
+        }
+
+        p::first-letter {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        p::first-line {
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <article>
+
+        <h1>The Art of Typography</h1>
+
+        <h2>Why Typography Matters</h2>
+
+        <p>
+            Typography is an important part of web design because it controls
+            how users read and understand information. Good typography makes
+            content more comfortable and attractive to read.
+        </p>
+
+        <p>
+            Using <mark>different font families</mark>, sizes and weights
+            helps create a clear visual hierarchy. 
+            <strong>Important information</strong> can be highlighted using
+            bold text, while <em>emphasized information</em> can use italic text.
+        </p>
+
+        <p>
+            Proper line-height, letter-spacing and text alignment improve
+            readability and create a balanced webpage. A good combination
+            of these properties makes the content both beautiful and useful.
+        </p>
+
+    </article>
+
+</body>
+</html>

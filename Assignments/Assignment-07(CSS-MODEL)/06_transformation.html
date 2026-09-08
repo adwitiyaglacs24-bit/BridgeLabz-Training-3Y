@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transformations</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            text-align: center;
+        }
+
+        .box {
+            width: 120px;
+            height: 120px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background: #3498db;
+            color: white;
+            font-weight: bold;
+
+            transition: all 0.4s ease;
+        }
+
+        .rotate:hover {
+            transform: rotate(20deg);
+        }
+
+        .scale:hover {
+            transform: scale(1.3);
+        }
+
+        .translate:hover {
+            transform: translateY(-30px);
+        }
+
+        .skew:hover {
+            transform: skew(15deg, 10deg);
+        }
+
+        .label {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Transformations</h1>
+
+    <div class="container">
+
+        <div class="item">
+            <div class="box rotate">Rotate</div>
+            <div class="label">rotate()</div>
+        </div>
+
+        <div class="item">
+            <div class="box scale">Scale</div>
+            <div class="label">scale()</div>
+        </div>
+
+        <div class="item">
+            <div class="box translate">Move</div>
+            <div class="label">translate()</div>
+        </div>
+
+        <div class="item">
+            <div class="box skew">Skew</div>
+            <div class="label">skew()</div>
+        </div>
+
+    </div>
+
+</body>
+</html>

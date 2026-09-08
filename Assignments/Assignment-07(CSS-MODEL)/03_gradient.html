@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gradients</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+
+            padding: 18px;
+            text-align: center;
+
+            background: #222;
+            color: white;
+            z-index: 10;
+        }
+
+        main {
+            padding-top: 65px;
+            padding-bottom: 60px;
+        }
+
+        section {
+            min-height: 80vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+            color: white;
+            font-size: 2rem;
+        }
+
+        .linear {
+            background: linear-gradient(
+                135deg,
+                #667eea,
+                #764ba2,
+                #f093fb
+            );
+        }
+
+        .radial {
+            background: radial-gradient(
+                circle,
+                #ff9a9e,
+                #fad0c4,
+                #fbc2eb
+            );
+
+            background-attachment: fixed;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+
+            padding: 15px;
+            text-align: center;
+
+            background: #222;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>CSS Gradient Demo</h2>
+    </header>
+
+    <main>
+
+        <section class="linear">
+            <div>
+                <h1>Linear Gradient</h1>
+                <p>Colors change gradually in a direction.</p>
+            </div>
+        </section>
+
+        <section class="radial">
+            <div>
+                <h1>Radial Gradient</h1>
+                <p>Colors spread outward from a central point.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        CSS Gradient Demonstration
+    </footer>
+
+</body>
+</html>
