@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #e8f0f5;
+            color: #222;
+        }
+
+        .form-container {
+            width: 90%;
+            max-width: 500px;
+            padding: 30px;
+
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px #aaa;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .field {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #aaa;
+            border-radius: 7px;
+            box-shadow: 0 2px 5px #ddd;
+            font-size: 16px;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #2277cc;
+        }
+
+        textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 7px;
+
+            background-color: #222;
+            color: white;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #444;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+
+        <h1>Contact Us</h1>
+
+        <form>
+
+            <div class="field">
+                <label>Name</label>
+                <input type="text" placeholder="Enter your name">
+            </div>
+
+            <div class="field">
+                <label>Email</label>
+                <input type="email" placeholder="Enter your email">
+            </div>
+
+            <div class="field">
+                <label>Subject</label>
+                <input type="text" placeholder="Enter subject">
+            </div>
+
+            <div class="field">
+                <label>Message</label>
+                <textarea placeholder="Enter your message"></textarea>
+            </div>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

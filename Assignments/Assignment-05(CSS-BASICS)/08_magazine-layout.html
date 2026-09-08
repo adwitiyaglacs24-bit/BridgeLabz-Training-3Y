@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Newspaper Layout</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px;
+            background-color: #ddd;
+            font-family: Georgia, serif;
+        }
+
+        .newspaper {
+            max-width: 1000px;
+            margin: auto;
+            padding: 30px;
+            background-color: white;
+        }
+
+        h1 {
+            column-span: all;
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+        .content {
+            column-count: 3;
+            column-gap: 40px;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .content img {
+            width: 150px;
+            height: 120px;
+            object-fit: cover;
+            float: left;
+            margin: 0 15px 10px 0;
+        }
+
+        @media (max-width: 800px) {
+            .content {
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .content {
+                column-count: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="newspaper">
+
+        <h1>Daily News</h1>
+
+        <div class="content">
+
+            <img src="https://picsum.photos/300/200">
+
+            <p>
+                Technology is changing the world rapidly.
+                New inventions are making our lives easier
+                and creating new opportunities.
+            </p>
+
+            <p>
+                Education has also changed because of technology.
+                Students can now access books, courses and
+                educational videos online.
+            </p>
+
+            <p>
+                Businesses use technology to communicate with
+                customers and improve their services.
+            </p>
+
+            <p>
+                The future will bring many more technological
+                developments and innovations.
+            </p>
+
+            <p>
+                People should learn new skills to keep up with
+                the changing world.
+            </p>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: #f4f4f4;
+            color: #222;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1em 5%;
+            background-color: #222;
+            color: white;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 10;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        nav {
+            display: flex;
+            gap: 2em;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+        }
+
+        main {
+            flex: 1;
+            margin-top: 80px;
+            min-height: 80vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5%;
+            padding: 5%;
+        }
+
+        .bio {
+            width: 45%;
+            font-size: 1.1rem;
+        }
+
+        .bio h2 {
+            font-size: 2rem;
+            margin-bottom: 1em;
+        }
+
+        .profile {
+            width: 40%;
+            text-align: center;
+        }
+
+        .profile img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+        }
+
+        footer {
+            height: 10vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #222;
+            color: white;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                position: relative;
+                flex-direction: column;
+                gap: 1em;
+            }
+
+            main {
+                margin-top: 0;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .bio,
+            .profile {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Adwitiya</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="bio">
+            <h2>About Me</h2>
+            <p>
+                Hello! I am a Computer Science student interested
+                in programming, web development and technology.
+                I enjoy learning new skills and building projects.
+            </p>
+        </div>
+
+        <div class="profile">
+            <img src="https://via.placeholder.com/250" alt="Profile Image">
+        </div>
+
+    </main>
+
+    <footer>
+        © 2026 Adwitiya | All Rights Reserved
+    </footer>
+
+</body>
+</html>
