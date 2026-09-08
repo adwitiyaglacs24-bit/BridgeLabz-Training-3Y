@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pricing</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            min-height: 100vh;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pricing {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .card {
+            width: 250px;
+            padding: 30px;
+            text-align: center;
+            background: #eee;
+            border-radius: 10px;
+
+            transition: 0.3s;
+
+            animation: fadeIn 1s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .middle {
+            background: #ddd;
+            transform: scale(1.1);
+        }
+
+        @keyframes fadeIn {
+
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+
+        }
+
+        @media (max-width: 750px) {
+
+            .pricing {
+                flex-direction: column;
+                padding: 30px;
+            }
+
+            .middle {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="pricing">
+
+        <div class="card">
+            <h2>Basic</h2>
+            <h3>₹199</h3>
+            <p>Basic Features</p>
+        </div>
+
+        <div class="card middle">
+            <h2>Pro</h2>
+            <h3>₹499</h3>
+            <p>All Features</p>
+        </div>
+
+        <div class="card">
+            <h2>Premium</h2>
+            <h3>₹799</h3>
+            <p>Premium Features</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
